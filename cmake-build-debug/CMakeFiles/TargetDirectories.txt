@@ -1,0 +1,3 @@
+/home/borys/cpp_projects/fingers_detection/cmake-build-debug/CMakeFiles/fingers_detection.dir
+/home/borys/cpp_projects/fingers_detection/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/borys/cpp_projects/fingers_detection/cmake-build-debug/CMakeFiles/rebuild_cache.dir
