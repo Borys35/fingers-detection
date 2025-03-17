@@ -18,6 +18,15 @@ int main() {
         cv::Mat frame;
         cap.read(frame);
 
+        // Rotate frame
+        cv::Point2f center(frame.cols / 2, frame.rows / 2);
+        cv::Mat rotMatrix = cv::getRotationMatrix2D(center, 180, 1.0);
+        cv::warpAffine(frame, frame, rotMatrix, frame.size());
+
+        // Resize frame
+        cv::resize(frame, frame, cv::Size(), 0.5, 0.5);
+
+        // Display frame
         cv::imshow("image", frame);
         if (cv::waitKey(30) == 27)
             return 0;
